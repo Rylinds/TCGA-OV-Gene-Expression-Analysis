@@ -1,5 +1,3 @@
-#Link to this file: https://utexas.box.com/shared/static/2q9p7yc3ixieypl8r7rbzex998nisy86.r
-#Note to future Nolan: since this file downloads itself, be sure to update the link as needed.
 message("Running version 20251027.06 of project setup script...")
 #Run this code every time the file is sourced
 if(exists("opt")){
@@ -13,8 +11,7 @@ if(exists("opt")){
         ## Check opt object column names
         reqNames <- c("wd","yourPckDir","cranPackages","biocPackages")
         reqNamesDesc<-c(
-            "A length 1 character vector describing path to the working directory. Typically this is '~/inb321g/project'.",
-            "A length >=1 character vector describing path to the directory it should install packages. Typically this is '~/inb321g/project/Rpackages'.",
+            "A length >=1 character vector describing path to the directory it should install packages.",
             "A length >=1 character vector describing the packages to be installed from the CRAN repository. In otherwords, these are the packages installed using `install.packages()`.",
             "A length >=1 character vector describing the packages to be installed from the Bioconductor suite of packages. This is a collection of packages commonly used by biologists. It uses an install tool named `BiocManager::install()` to install. It is also capable of installing from github if you describe the package using the 'repoName/packageName' format."
         )
@@ -37,7 +34,7 @@ if(exists("opt")){
         ##Store a copy of this file in the working directory
         download.file(
             destfile = "projectSharedFunctions.R",
-            url = "https://utexas.box.com/shared/static/2q9p7yc3ixieypl8r7rbzex998nisy86.r", #Nolan: Don't forget to update this if it changes!
+            url = "edupod url",
             quiet = T,verbose=F
         )
         message("\nDownloaded a copy of this script to the wd for your records.")
@@ -55,8 +52,7 @@ if(exists("opt")){
         ## Make the package directory container
         opt$pckDir <- unique(c(sharedPckDir,opt$yourPckDir))
 
-        ## Change the package directory if you are Nolan (this code is here to help me keep the shared directory updated)
-        if(path.expand("~/")=="/stor/home/nbb624/"){opt$pckDir <- opt$sharedPckDir}
+        if(path.expand("~/")=="/stor/home/user/"){opt$pckDir <- opt$sharedPckDir}
 
         ##Setup package directory
         dir.create(opt$pckDir[1],recursive = T,showWarnings = F)
@@ -86,14 +82,14 @@ if(exists("opt")){
             message("\nBioconductor packages installed using `BiocManager::install()`.")
         }
 
-        #### If using personal and shared class directory, don't allow key packages
+        #### If using personal directory don't allow key packages
         # To be implemented
 
         ##Load packages
         message("\nChecking for specific package installations...")
-        if(!requireNamespace("BiocManager" ,quietly = T)){stop("BiocManager" ," could not be loaded! Try again and/or contact an instructor.")}
-        if(!requireNamespace("DESeq2"      ,quietly = T)){stop("DESeq2"      ," could not be loaded! Try again and/or contact an instructor.")}
-        if(!requireNamespace("TCGAbiolinks",quietly = T)){stop("TCGAbiolinks"," could not be loaded! Try again and/or contact an instructor.")}
+        if(!requireNamespace("BiocManager" ,quietly = T)){stop("BiocManager" ," could not be loaded!")}
+        if(!requireNamespace("DESeq2"      ,quietly = T)){stop("DESeq2"      ," could not be loaded!")}
+        if(!requireNamespace("TCGAbiolinks",quietly = T)){stop("TCGAbiolinks"," could not be loaded!")}
         message("BiocManager, DESeq2, and TCGAbiolinks installations seem valid.")
 
         ##Add messages describing outcome
@@ -116,7 +112,6 @@ if(exists("opt")){
              " - If the issue is loading packages, quit the R session without saving the workspace.\n",
              " - You may need to do this a few times.\n",
              " - Each time you retry, you will need to recreate opt if you are doing it right.\n",
-             " - Contact Nolan if this message keeps appearing, as this script may require an update for your system.\n\n",
              "Here is a print out of the error message this script 'caught':\n",
              opt$configResult
         )

@@ -1,8 +1,0 @@
-id	filename	md5	size	state
-0faa9697-8fed-4345-9519-0a246389849d	0faa9697-8fed-4345-9519-0a246389849d/ce71f558-2289-42ed-a6fa-d335cbc4eae5.rna_seq.augmented_star_gene_counts.tsv	fb249f020c7ae95bb396272e762be898	4250803	validated
-29e49cd4-3233-41e5-89fb-24bfe09d540e	29e49cd4-3233-41e5-89fb-24bfe09d540e/872f7c22-17e4-4940-809b-a0970fde369b.rna_seq.augmented_star_gene_counts.tsv	78f8a0db425aa608338a415b7a7ffd25	4247017	validated
-48875905-17e3-439e-869c-caf83a360d67	48875905-17e3-439e-869c-caf83a360d67/391b894d-7639-4e12-97f1-e189233505ff.rna_seq.augmented_star_gene_counts.tsv	be7e82bfa636af536bb468aa5b7c82b2	4287044	validated
-5489e08c-6b15-4241-ae1c-47b432acfa84	5489e08c-6b15-4241-ae1c-47b432acfa84/68faaf7b-ec8b-4e35-b86d-54f927585c61.rna_seq.augmented_star_gene_counts.tsv	22932f2ec65f141a9bacafed14b95a82	4265617	validated
-8eb73ad8-0aff-403f-8d95-5c20dcd210a2	8eb73ad8-0aff-403f-8d95-5c20dcd210a2/22a0a810-bcf2-4e89-aa7d-bcbdbf88fb82.rna_seq.augmented_star_gene_counts.tsv	388f618928e19c754c3d75eb8144af24	4254592	validated
-ac6d39c1-390e-4fc2-88d7-11553782e32f	ac6d39c1-390e-4fc2-88d7-11553782e32f/299f99cd-e2df-4266-a488-4f8f48aa68d9.rna_seq.augmented_star_gene_counts.tsv	777c49ef64e70e44e73fe52cb64a7e3e	4245321	validated
-ca4da4fd-c798-42a7-8a03-8ec7cb4e6f02	ca4da4fd-c798-42a7-8a03-8ec7cb4e6f02/bd0a6575-996a-45d2-9be2-2187a1cf1cbe.rna_seq.augmented_star_gene_counts.tsv	6cbf2db91a35618c52fe9e694106bd5a	4245511	validated
